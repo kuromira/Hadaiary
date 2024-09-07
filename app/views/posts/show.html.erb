@@ -1,0 +1,19 @@
+<h3>日記詳細</h3>
+<div class="post">
+  <p>投稿した日<%= @post.day %></p>
+  <p>この日の天気<%= @post.weather %></p>
+  <p>この日の体調<%= @post.condition %></p>
+  <p>前日の睡眠時間<%= @post.sleep_time %></p>
+  <p>この日のスキンケア<%= @post.skin_care %></p>
+  <p>この日食べたもの<%= @post.food %></p>
+  <p>この日嬉しかったこと<%= @post.happy_event %></p>
+  <p>この日悲しかったこと<%= @post.sad_event %></p>
+  <p>ハッシュタグ<%= @post.tag_ids %></p>
+    
+
+  
+</div>
+
+<%= link_to "編集する", edit_post_path(@post.id) %>
+<%= button_to "削除する", post_path(@post.id), method: :delete %>
+<%= link_to '戻る', session[:previous_url] || root_path %>

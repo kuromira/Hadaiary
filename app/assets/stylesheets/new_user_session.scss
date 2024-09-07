@@ -1,0 +1,56 @@
+.blank1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.blank2{
+    text-align: center;
+    width: 50%;
+    color: white;
+    background: #82d4d0;
+    border-radius: 9px;
+    margin: 20px 5px;
+    padding: 20px 40px;
+    }
+
+.blank2 a{
+    color:#ffffff;
+    }
+
+.field label {
+    font-weight: 100;
+    font-size: 15px;
+    }
+
+.field input[type="email"] {
+    border-style: none;
+    width: 200px;
+    height: 30px;
+    background: #cbf1f1;
+    border-radius: 10px;
+    border: 1px #060339 solid;
+    }
+
+.field input[type="password"] {
+    border-style: none;
+    width: 200px;
+    height: 30px;
+    background: #cbf1f1;
+    border-radius: 10px;
+    border: 1px #060339 solid;
+    }
+
+.actions input[type="submit"] {
+    border-style: none;
+    width: 150px;
+    height: 30px;
+    background: #77d8d8;
+    border-radius: 10px;
+    border: 1px #060339 solid;
+    }
+
+.actions input[type="submit"]:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom,#55c4ac,#23a1a5f3);
+    }

@@ -1,0 +1,12 @@
+<h1>マイページ</h1>
+
+<% if @posts.any? %>
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2><%= link_to post.day, post_path(post) %></h2>
+      
+    </div>
+  <% end %>
+<% else %>
+  <p>まだ投稿がありません。</p>
+<% end %>

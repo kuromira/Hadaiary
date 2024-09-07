@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+
+ * {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-color: #d6f5f1; /* 好みの背景色に変更 */
+    color: #462a2a; /* テキストの色も設定 */
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+      Meiryo, "ＭＳ Ｐゴシック", sans-serif; /* フォントの設定 */
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background-color: #63daca;
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.title{
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  display: flex;
+  font-size: larger;
+  align-items: center;
+}
+
+
+.header-list {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+ 
+header ul {
+    display: flex;
+  }
+
+header li {
+    list-style: none;
+    margin-right: 20px;
+  }

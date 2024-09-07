@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hadaiary</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="title-image">
+        <%= link_to "image_tag ("ha.png", alt: "Title Image")", hello_index_path, class:title-image %>
+      </div>
+      <div class="header-list">
+      <ul>
+        <li><%= link_to "日記を投稿する", new_post_path, class:'header-list' %></li>
+        <li><%= link_to "新規登録", new_user_registration_path, class:'header-list' %></li>
+        <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+      </ul>
+      </div>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2024-08-20
+  weather: MyString
+  condition: MyString
+  sleep_time: 2024-08-20 23:19:44
+  skin_care: MyText
+  food: MyText
+  happy_event: MyText
+  sad_event: MyText
+  hashtag: MyString
+
+two:
+  day: 2024-08-20
+  weather: MyString
+  condition: MyString
+  sleep_time: 2024-08-20 23:19:44
+  skin_care: MyText
+  food: MyText
+  happy_event: MyText
+  sad_event: MyText
+  hashtag: MyString

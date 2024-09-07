@@ -1,0 +1,46 @@
+// Place all the styles related to the hello controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* 背景画像を設定するスタイル */
+.image-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 10%;
+}
+
+.image-container img{
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 0 10px; /* 画像との間隔を調整 */
+  padding-top: 0%;
+  text-align: center;
+  background-color: rgb(252, 243, 231);
+}
+
+
+.lady {
+    background-image: url('/assets/hadaare.jpeg');
+    background-size: cover; /* 画像をページ全体にフィットさせる */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    height: 100vh; /* ページ全体の高さを確保 */
+    margin: 0;
+  }
+  
+ 
